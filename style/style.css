@@ -5,3 +5,15 @@
 .paragraph{
     margin-left: 200px;
 }
+
+.players-image{
+    height: 285px;
+}
+
+.list-color-bg{
+    background-color: tomato;
+}
+
+.budget{
+    margin-top: 70px;
+}
