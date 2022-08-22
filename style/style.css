@@ -7,14 +7,15 @@ body{
 }
 
 .title{
-    margin-right: 0px;
-    color: red;
+    margin-right: -87px;
+    color: tomato;
     font-size: 50px;
     
 }
 
 .paragraph{
     margin-left: 200px;
+    margin-top: 5px;
 }
 
 .card-bg{

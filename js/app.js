@@ -55,3 +55,19 @@ document.getElementById('btn-calculate').addEventListener('click',function(){
 })
 
 
+// Manager and Coach budget field value and calculate total expenses(function called from common)
+
+document.getElementById('btn-total-calculation').addEventListener('click',function(){
+    
+    let budgetForManager = getInputFieldValueById('manager-budget-field');
+    let budgetForCoach = getInputFieldValueById('coach-budget-field');
+    
+    let totalExpense = budgetForManager + budgetForCoach + selectedPlayersExpense;
+    console.log(totalExpense);
+
+    setTextaValueById('total-expenses',totalExpense);
+    
+
+})
+
+
