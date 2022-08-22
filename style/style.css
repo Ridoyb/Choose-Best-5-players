@@ -1,19 +1,49 @@
+body{
+    background-color: green;
+}
+
+.bg-color{
+    background-color: green;
+}
+
 .title{
     margin-right: 50px;
+    color: red;
+    
 }
 
 .paragraph{
     margin-left: 200px;
 }
 
+.card-bg{
+    background-color: green;
+    border: solid 1px white;
+}
+
+/* Card button backgraund */
+.card-bg a{
+    background-color: red;
+}
+
+/* Player image height */
 .players-image{
     height: 285px;
 }
 
-.list-color-bg{
-    background-color: tomato;
-}
+
+
 
 .budget{
     margin-top: 70px;
+}
+
+.calculate-button{
+    background-color: red;
+}
+
+/* footer Line */
+.line{
+    background-color: white;
+    height: 3px;
 }
