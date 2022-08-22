@@ -1,3 +1,5 @@
+
+//Player Select and atted to selected list
 const selectedPlayersArray = [];
 
 
@@ -41,5 +43,15 @@ function selectPlayer(element){
 
     display(button);
 }
+
+// get per player budget and calculate total expenses (function called from common)
+
+document.getElementById('btn-calculate').addEventListener('click',function(){
+    let perPlayerBudget =  getInputFieldValueById('per-player-budget-field');
+    // Calculate total budget for selected players
+    selectedPlayersExpense = perPlayerBudget * selectedPlayersArray.length;
+
+    setTextaValueById('selected-player-expense',selectedPlayersExpense);
+})
 
 
