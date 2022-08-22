@@ -7,8 +7,9 @@ body{
 }
 
 .title{
-    margin-right: 50px;
+    margin-right: 0px;
     color: red;
+    font-size: 50px;
     
 }
 
@@ -22,7 +23,7 @@ body{
 }
 
 /* Card button backgraund */
-.card-bg a{
+.card-bg button{
     background-color: red;
 }
 
@@ -40,6 +41,7 @@ body{
 
 .calculate-button{
     background-color: red;
+    width: 90%;
 }
 
 /* footer Line */
