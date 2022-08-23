@@ -18,3 +18,12 @@ function getInputFieldValueById(elementId) {
     const textElement = document.getElementById(elementId);
     textElement.innerText = value.toFixed(2);
   }
+
+  //Error handling function
+  function wrongInputCheck(value,field){
+    if(value < isNaN(value) || 0 ===true){
+        alert("Error!! Please enter a valid number!!! The input can not be negetive or character.");
+        const valueAfterWrongInput = '0000';
+        setTextaValueById(field,valueAfterWrongInput);
+    }
+  }

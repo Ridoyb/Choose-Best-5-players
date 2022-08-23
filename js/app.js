@@ -48,6 +48,8 @@ function selectPlayer(element){
 
 document.getElementById('btn-calculate').addEventListener('click',function(){
     let perPlayerBudget =  getInputFieldValueById('per-player-budget-field');
+    //Error check if input is negetive or character.
+    wrongInputCheck(perPlayerBudget,'per-player-budget-field');
     // Calculate total budget for selected players
     selectedPlayersExpense = perPlayerBudget * selectedPlayersArray.length;
 
@@ -60,7 +62,11 @@ document.getElementById('btn-calculate').addEventListener('click',function(){
 document.getElementById('btn-total-calculation').addEventListener('click',function(){
     
     let budgetForManager = getInputFieldValueById('manager-budget-field');
+    //Error check if input is negetive or character.
+    wrongInputCheck(budgetForManager,'manager-budget-field');
     let budgetForCoach = getInputFieldValueById('coach-budget-field');
+    //Error check if input is negetive or character.
+    wrongInputCheck(budgetForCoach,'coach-budget-field');
     
     let totalExpense = budgetForManager + budgetForCoach + selectedPlayersExpense;
     console.log(totalExpense);

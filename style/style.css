@@ -33,7 +33,9 @@ body{
     height: 285px;
 }
 
-
+.select-button{
+    width: 90%;
+}
 
 
 .budget{
